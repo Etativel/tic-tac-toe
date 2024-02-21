@@ -13,12 +13,12 @@
 
 .header {
     grid-row: 1;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .board {
     grid-row: 2/5;
-    background-color: blue;
+    /* background-color: blue; */
     margin-left: 15%;
     margin-right: 15%;
     justify-content: center;
