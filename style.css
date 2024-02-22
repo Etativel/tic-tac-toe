@@ -2,6 +2,8 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    /* background-color: aqua; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -27,21 +29,24 @@
 
 .playBoard {
     background-color: white;
-    width: 450px;
-    height: 450px   ;
+    width: 300px;
+    height: 300px   ;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 6px;
     padding: 6px;
+
+    border: 2px solid black;
+    border-radius: 6px;
 }
 
 .box {
     border: solid black 2px;
     border-radius: 6px;
 
-    font-size: 100px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,5 +55,48 @@
 .box:hover {
     border: solid black 2px;
     border-radius: 6px;
-    background-color: aqua;
+    background-color: gray;
+}
+
+.input-container {
+    display: flex;
+    gap: 12px;
+    /* background-color: yellow; */
+    padding: 12px;
+}
+
+button {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+    border-radius: 6px;
+    border: 0px;
+    background-color: white;
+
+    font-size: medium;
+    color: white;
+    background-color: blue;
+    border: 2px blue solid;
+}
+button:hover {
+    color: blue;
+    background-color: white;
+    border: 2px blue solid;
+}
+
+input {
+    border-radius: 6px;
+}
+
+#message {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    height: 90px;
+}
+
+.title{
+    padding: 24px;
 }
